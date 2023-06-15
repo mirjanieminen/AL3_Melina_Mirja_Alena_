@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/form.js" async></script>
+    <nav>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Über Splash</a></li>
+      <li class="index"><a href="gewinnspiel.html">Gewinnspiel</a></li>
+    </nav>
+      <img class="image" src="images/splash_logo.png">
+   
+</head>
+  
+    <body class="webpage">  
+    <section>
+
+      <div class="spinner">
+        <div id="spinner-container">
+          <div class="arrow"></div>
+        </div>
+      </div>
+      <p></p>
+      <button class="spin" onclick="startSpin()">Drehen</button>
+      
+          <div class="content">
+            <div id="formContainer">
+              <div>
+                Der Hauptpreis beinhaltet ein Getränkepaket im Wert von 222 Franken.</br></br>
+                Ausfüllen und gewinnen!
+            
+              </div>
+      
+              <form>
+                  <input type="radio" id="anrede" name="anrede" required>
+                  <label for="anrede_frau">Frau</label><br>
+                  <input type="radio" id="anrede" name="anrede" required>
+                  <label for="anrede_mann">Mann</label><br>
+                  <input type="radio" id="anrede" name="anrede" required>
+                  <label for="anrede_divers">Divers</label>
+      <br><br>
+                  <input type="text" id="vorname" placeholder="Vorname" required>
+                  <input type="text" id="name" placeholder="Name" required>
+      <br><br>
+                  <input type="date" id="geburtsdatum" placeholder="Geburtsdatum" required>
+                  <input type="email" id="email" placeholder="Email eingeben" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+      <br><br>          <input type="submit" id="submit" value="Absenden">
+      <br><br>
+      
+                  <div id="thankYouContainer" class="hidden">
+                    Herzlichen Dank für deine Teilnahme.
+                  </div>
+              </form>
+          </div>
+      
+      <br> <br>
+    </section>
+    <footer>
+        <img class="logo" src="images/splash_logo.png">
+        <div><a href="about.html" style="text-decoration: none; color: #FEC2C3;">Über Splash</a></div>
+        <div><a href="gewinnspiel.html" style="text-decoration: none; color: #FEC2C3;">Gewinnspiel</a></div>
+        <p>Dies ist ein Projekt ausschliesslich für schulische Zwecke.</p>
+        <p>Splash-Team; Melina Bucher, Mirja Nieminen, Alena Distel</p>
+        <p>© 2023 by Splash</p>
+    </footer>
+  </body>
+</html>
+
+
